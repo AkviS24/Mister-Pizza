@@ -1,3 +1,11 @@
 .orange {
     background-color: #E76C1F;
 }
+
+.hero-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-sizing: border-box;
+    height: 440px;
+}
