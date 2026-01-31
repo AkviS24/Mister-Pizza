@@ -9,3 +9,8 @@
     box-sizing: border-box;
     height: 440px;
 }
+
+.header {
+    width: 100%;
+    height: 120px;
+}
