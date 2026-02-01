@@ -30,7 +30,6 @@ function getBasket(item, total, i) {
             <p class="basket-price">${total.toFixed(2)} €</p>
 
             <button class="basket-remove" onclick="removeItem(${i})">🗑️</button>
-            <button class="order-button" onclick="${showDialog()}">Order now</button>
         </div>
     `;
 }
@@ -39,5 +38,6 @@ function getBasketSum(sum) {
     return `
         <br>
         <b>Total:</b> ${sum.toFixed(2)} €<br>
+        <button class="order-button" onclick="${showDialog()}">Order now</button>
     `;
 }
