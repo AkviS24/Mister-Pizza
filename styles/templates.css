@@ -1,0 +1,54 @@
+.foodCard {
+    background-color: #FDEADC;
+    border-bottom: solid 1px black;
+    padding-bottom: 8px;
+}
+
+.foodCardImage {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.foodCardInfo {
+    max-width: 70%;
+    border: solid 1px black;
+}
+
+.foodCardIngridents {
+    width: 70%;
+}
+
+.foodCardFunctions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: white;
+    font-wight: bold;
+    max-width: 30%;
+    box-sizing: border-box;
+    background-color: #a74805;
+    padding: 8px;
+}
+
+.addToBasket {
+    background-color: white;
+    color: black;
+}
+
+.addToBasket:hover {
+    background-color: #079d20;
+    color: white;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+@media(max-width: 660px) {
+    .foodCardFunctions {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
