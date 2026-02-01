@@ -25,7 +25,7 @@
     align-items: center;
     gap: 24px;
     color: white;
-    font-wight: bold;
+    font-weight: bold;
     max-width: 30%;
     box-sizing: border-box;
     background-color: #a74805;
@@ -44,6 +44,29 @@
 
 .displayFlex {
     display: flex;
+}
+
+.basket {
+    background-color: black;
+    color: white;
+    border-radius: 16px;
+    max-height: 240px;
+    width: 30%;
+    margin-right: 0px;
+    overflow-y: scroll;
+    position: sticky;
+    right: 0;
+}
+
+.basket-item {
+    background-color: #1d0e03;
+    border: solid 1px white;
+}
+
+.order-button {
+    background-color: #E76C1F;
+    padding: 4px;
+    color: white;
 }
 
 @media(max-width: 660px) {
