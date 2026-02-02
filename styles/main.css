@@ -45,6 +45,25 @@
     display: none;
 }
 
+.dialogHeader {
+    background-color: #2f2d2c;
+    color: white;
+}
+
+.dialogMain {
+    background-color: #7f7e7e;
+}
+
+.dialogFooter {
+    background-color: #2f2d2c;
+}
+
+.okBtn {
+    width: 64px;
+    font-weight: bold;
+    background-color: #E76C1F;
+}
+
 .food-wrapper {
     flex-grow: 1;
 }
@@ -88,9 +107,12 @@
 
     .basketButton {
         display: block;
-        position: absolute;
-        bottom: 0;
+        position: sticky;
+        top: 0;
         width: 100px;
         left: 50% - 50px;
+        flex-grow: 1;
+        padding: 2px 6px 2px 6px;
+        background-color: #E76C1F;
     }
 }

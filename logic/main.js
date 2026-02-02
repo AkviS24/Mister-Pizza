@@ -31,10 +31,10 @@ function render() {
     }
 }
 
-// function showBasket() {
-//     basketOpenRef.showModal();
-//     basketOpenRef.innerHTML = renderBasket();
-// }
+function showBasket() {
+    basketOpenRef.showModal();
+    basketOpenRef.innerHTML += renderBasket();
+}
 
 function showMenu() {
     menuRef.showModal();
@@ -43,6 +43,7 @@ function showMenu() {
 function closeMenu() {
     basketRef.innerHTML = "";
     basketSumRef.innerHTML = "";
+    basket.length = 0;
     menuRef.close();
     // basketOpenRef.close();
 }

@@ -36,23 +36,10 @@
             </header>
             <section class="dialogMain"><img src="./img/truck.png"></section>
             <footer class="dialogFooter">
-                <button onclick="closeMenu()">Ok</button>
+                <button class="okBtn" onclick="closeMenu()">Ok</button>
             </footer>
         </dialog>
     </div>
-
-    <button class="basketButton" onclick="showBasket()" aria-haspopup="dialog" aria-controls="basket-open">Show
-        Basket</button>
-
-    <!-- <div class="basketOpen">
-        <dialog class="basket-open" id="basket-open">
-            <div class="basket">
-                <h2>Your basket</h2>
-                <div id="basket-content"></div>
-                <div class="basket-sum" id="basket-sum"></div>
-            </div>
-        </dialog>
-    </div> -->
 
     <main class="container main">
         <div class="basket">
@@ -60,6 +47,19 @@
             <div id="basket-content"></div>
             <div class="basket-sum" id="basket-sum"></div>
         </div>
+
+        <button class="basketButton" onclick="showBasket()" aria-haspopup="dialog" aria-controls="basket-open">Show
+            Basket</button>
+
+
+        <dialog class="basket-open" id="basket-open">
+            <div class="basket">
+                <h2>Your basket</h2>
+                <div id="basket-content"></div>
+                <div class="basket-sum" id="basket-sum"></div>
+            </div>
+        </dialog>
+
 
         <div class="food-wrapper">
             <div class="seperator orange">
