@@ -7,6 +7,7 @@ const burgerContentRef = document.getElementById("burger-content");
 const pizzaContentRef = document.getElementById("pizza-content");
 const saladContentRef = document.getElementById("salad-content");
 const menuRef = document.getElementById("menu");
+const basketOpenRef = document.getElementById("basket-open");
 
 const basket = [];
 
@@ -30,6 +31,11 @@ function render() {
     }
 }
 
+// function showBasket() {
+//     basketOpenRef.showModal();
+//     basketOpenRef.innerHTML = renderBasket();
+// }
+
 function showMenu() {
     menuRef.showModal();
 }
@@ -38,6 +44,7 @@ function closeMenu() {
     basketRef.innerHTML = "";
     basketSumRef.innerHTML = "";
     menuRef.close();
+    // basketOpenRef.close();
 }
 
 function addToBasket(i) {
