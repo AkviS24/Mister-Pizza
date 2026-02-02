@@ -37,9 +37,12 @@
     border: solid 1px black;
     display: flex;
     flex-direction: column;
-    flex: 1;
     position: relative;
     top: 0;
+}
+
+.food-wrapper {
+    flex-grow: 1;
 }
 
 .seperator {
@@ -72,4 +75,12 @@
     right: 0;
     color: white;
     height: 120px;
+}
+
+@media(max-width: 590px) {
+    .food-content {
+        width: 100%;
+    }
+
+
 }

@@ -81,3 +81,9 @@
         justify-content: center;
     }
 }
+
+@media(max-width: 590px) {
+    .basket {
+        display: none;
+    }
+}
