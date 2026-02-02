@@ -28,7 +28,7 @@
     <div class="container center">
         <img src="./img/Frame 58.png" class="slogan" alt="Burger House - the best burger in town">
     </div>
-    
+
     <main class="container main">
         <div class="seperator orange">
             <img class="seperator-icon" src="./img/burger-icon.png" alt="burger&sandwiches">
@@ -36,19 +36,22 @@
         </div>
 
         <div class="basket">
+            <h2>Your basket</h2>
             <div id="basket-content"></div>
             <div class="basket-sum" id="basket-sum"></div>
         </div>
 
-        <dialog id="menu">
-            <header class="dialogHeader">
-                <h2>Your order is on the way</h2>
-            </header>
-            <section class="dialogMain"><img src="./img/truck.png"></section>
-            <footer class="dialogFooter">
-                <button onclick="closeMenu()">Ok</button>
-            </footer>
-        </dialog>
+        <div class="container">
+            <dialog id="menu">
+                <header class="dialogHeader">
+                    <h2>Your order is on the way</h2>
+                </header>
+                <section class="dialogMain"><img src="./img/truck.png"></section>
+                <footer class="dialogFooter">
+                    <button onclick="closeMenu()">Ok</button>
+                </footer>
+            </dialog>
+        </div>
 
         <section class="food-content" id="burger-content"></section>
 
@@ -70,7 +73,7 @@
         <div class="container space-around">
             <span><img src="./img/copyright.png">2026 BurgerHouse</span>
             <a href="#">Imprint</a>
-            <a href="#">Cookie Preferences  </a>
+            <a href="#">Cookie Preferences </a>
         </div>
     </footer>
 </body>

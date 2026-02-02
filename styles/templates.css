@@ -54,7 +54,7 @@
     padding: 2px;
     flex-grow: 1;
     color: white;
-    max-height: 240px;
+    max-height: 560px;
     width: 30%;
     overflow-y: scroll;
     position: sticky;

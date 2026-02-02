@@ -38,6 +38,6 @@ function getBasketSum(sum) {
     return `
         <br>
         <b>Total:</b> ${sum.toFixed(2)} €<br>
-        <button class="order-button" aria-haspopup="dialog" aria-controls="menu" onclick="${showMenu()}">Order now</button>
+        <button class="order-button" aria-haspopup="dialog" aria-controls="menu" onclick="showMenu()">Order now</button>
     `;
 }
