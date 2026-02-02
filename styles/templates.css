@@ -52,9 +52,8 @@
     border-radius: 16px;
     max-height: 240px;
     width: 30%;
-    margin-right: 0px;
     overflow-y: scroll;
-    position: sticky;
+    position: absolute;
     right: 0;
 }
 
