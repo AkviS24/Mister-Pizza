@@ -8,7 +8,7 @@ function getTemplate(i) {
                     <p class="foodCardIngridents">${meals[i].ingridents.join(', ')}</p>
                 </div>
                 <div class="foodCardFunctions">
-                    <p class="foodCardPrice">${meals[i].price.toFixed(2)}</p>
+                    <p class="foodCardPrice">${meals[i].price.toFixed(2)} €</p>
                     <button class="addToBasket" onclick="addToBasket(${i})">Add to Basket</button>          
                 </div>
             </div>
@@ -19,7 +19,7 @@ function getTemplate(i) {
 function getBasket(item, total, i) {
     return `
         <div class="basket-item">
-            <span class="basket-name">${item.name}</span>
+            <h2="basket-name">${item.name}</h2>
 
             <div class="basket-controls">
                 <button onclick="decreaseAmount(${i})">−</button>
@@ -38,6 +38,6 @@ function getBasketSum(sum) {
     return `
         <br>
         <b>Total:</b> ${sum.toFixed(2)} €<br>
-        <button class="order-button" onclick="${showDialog()}">Order now</button>
+        <button class="order-button" aria-haspopup="dialog" aria-controls="menu" onclick="${showMenu()}">Order now</button>
     `;
 }
