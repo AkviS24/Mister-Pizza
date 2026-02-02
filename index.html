@@ -35,11 +35,20 @@
             <h2 class="seperator-text">Burger & Sandwiches</h2>
         </div>
 
-        <div class="basket" id="basket-content">
+        <div class="basket">
+            <div id="basket-content"></div>
             <div class="basket-sum" id="basket-sum"></div>
         </div>
 
-        <dialog id="menu"></dialog>
+        <dialog id="menu">
+            <header class="dialogHeader">
+                <h2>Your order is on the way</h2>
+            </header>
+            <section class="dialogMain"><img src="./img/truck.png"></section>
+            <footer class="dialogFooter">
+                <button onclick="closeMenu()">Ok</button>
+            </footer>
+        </dialog>
 
         <section class="food-content" id="burger-content"></section>
 

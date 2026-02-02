@@ -60,6 +60,7 @@ function renderBasket() {
 }
 
 function renderBasketSum() {
+    basketSumRef.innerHTML = "";
     let sum = 0;
     for (let i = 0; i < basket.length; i++) {
         sum += basket[i].price * basket[i].amount;
