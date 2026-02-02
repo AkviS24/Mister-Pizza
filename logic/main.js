@@ -35,6 +35,8 @@ function showMenu() {
 }
 
 function closeMenu() {
+    basketRef.innerHTML = "";
+    basketSumRef.innerHTML = "";
     menuRef.close();
 }
 

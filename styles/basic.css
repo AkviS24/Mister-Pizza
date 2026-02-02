@@ -37,6 +37,13 @@ a:hover {
     width: auto;
 }
 
+.h40wauto {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 40px;
+    width: auto;
+}
+
 .space-around {
     display: flex;
     justify-content: space-around;
