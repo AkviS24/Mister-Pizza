@@ -54,6 +54,16 @@
     background-color: #7f7e7e;
 }
 
+.truck {
+    position: relative;
+    transition: 2s ease-out;
+    transform: translateX(0px);
+}
+
+.truck.open {
+    transform: translateX(150px);
+}
+
 .dialogFooter {
     background-color: #2f2d2c;
 }

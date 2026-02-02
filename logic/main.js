@@ -8,6 +8,7 @@ const pizzaContentRef = document.getElementById("pizza-content");
 const saladContentRef = document.getElementById("salad-content");
 const menuRef = document.getElementById("menu");
 const basketOpenRef = document.getElementById("basket-open");
+const truckRef = document.getElementById("truck");
 
 const basket = [];
 
@@ -38,12 +39,14 @@ function showBasket() {
 
 function showMenu() {
     menuRef.showModal();
+    truckRef.classList.add("open");
 }
 
 function closeMenu() {
     basketRef.innerHTML = "";
     basketSumRef.innerHTML = "";
     basket.length = 0;
+    truckRef.classList.remove("open");
     menuRef.close();
     // basketOpenRef.close();
 }
